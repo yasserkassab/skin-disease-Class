@@ -1,6 +1,4 @@
 # skin-disease-Class
-This project implements a skin disease detection model using a Convolutional Neural Network (CNN) based on the ResNet-50 architecture. The model is trained to classify images of skin diseases into eight categories, utilizing transfer learning with a pre-trained model.
-# Skin Disease Detection Model
 
 This project implements a skin disease detection model using a Convolutional Neural Network (CNN) based on the ResNet-50 architecture. The model is trained to classify images of skin diseases into eight categories, utilizing transfer learning with a pre-trained model. The model achieved an accuracy of **97%** on the validation dataset.
 
@@ -13,9 +11,6 @@ This project implements a skin disease detection model using a Convolutional Neu
 - [Usage](#usage)
 - [Training the Model](#training-the-model)
 - [Evaluation](#evaluation)
-- [Results](#results)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
@@ -48,3 +43,19 @@ To run this project, you need to have the following installed:
 
    ```bash
    pip install torch torchvision numpy scikit-learn matplotlib seaborn
+
+## Training the Model
+The model is trained using the train_model function defined in the code. The training process includes:
+
+    Data augmentation for the training set.
+    Loss calculation using Cross Entropy Loss.
+    Optimization using the Adam optimizer.
+    Saving the best model based on validation accuracy.
+
+## Evaluation
+The evaluate_model function evaluates the trained model on the validation dataset. It outputs:
+
+    Confusion matrix
+    Classification report
+    Visualization of the confusion matrix
+    
